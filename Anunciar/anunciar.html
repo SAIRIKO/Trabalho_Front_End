@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anunciar</title>
+    <link rel="stylesheet" href="/Anunciar/style/anunciar.css">
+    <link rel="stylesheet" href="/financiamento/header-footer.css">
+    <link rel="stylesheet" href="/Anunciar/style/planos.css">
+    <link rel="stylesheet" href="/Anunciar/style/perguntas.css">
+    <link rel="stylesheet" href="/Anunciar/style/div-anunciar.css">
+</head>
+<body>
+    <nav>
+    
+        <div class="logo">
+            <a href="/Home/home.html">
+                    <h2> <b>I N O V O U</b> </h2>
+                    <p> <i> <b>CASAS E APARTAMENTOS</b> </i> </p>
+            </a>
+            <br>
+        </div>
+
+        <a href="#" target="_blank" class="user-icon">
+            <img src="/_icones/icons8-male-user-48.png" alt="User" width="40px">
+        </a>
+    </nav>
+
+    <div class="escolha">
+        <div class="planos">
+            <h1>
+                Anuncie seus imóveis <br> no maior portal <br> imobiliário do país
+            </h1>
+    
+            <p>
+                Contrate o plano ideal para sua <br> necessidade 
+            </p>
+            <br>
+            <a href="#lista-de-planos">
+                <button>Nossos planos</button>
+            </a>
+        </div>
+    
+        <div>
+            <div class="anuncie">
+                <div class="container" id="container">
+                    <div class="form-container sign-up-container">
+                        <form>
+                            <h1>Proprietário de imóveis</h1>
+                            <br>
+                            <h2>O que você deseja fazer ?</h2>
+                            <div class="escolha-proprietario">
+                                <button class="button-choice" id="meuBotao" onclick="marcarBotao()">Vender</button>
+                                <button class="button-choice" id="meuBotao1" onclick="marcarBotao()">Alugar</button>
+                            </div>
+                            <br>
+                            <h2>Qual o tipo do seu imóvel ?</h2>
+                            <div class="escolha-proprietario">
+                                <button class="button-choice" id="meuBotao2" onclick="marcarBotao()">Residencial</button>
+                                <button class="button-choice" id="meuBotao3" onclick="marcarBotao()">Comercial</button>
+                            </div>
+                            
+                            <a href="/inovou/casas/index.html">
+                                <div class="submit">
+                                    Continuar
+                                </div>
+                            </a>
+                        </form>
+    
+                        <style>
+                            .botao-clicado {
+                                background-color: #21bb29;
+                                color: white;
+                                border: 1px solid white ;
+                            }
+                        </style>
+    
+                        <script>
+                            const botao = document.getElementById('meuBotao');
+                            botao.addEventListener('click', function() {
+                            botao.classList.add('botao-clicado');
+                            });
+    
+                            const botao1 = document.getElementById('meuBotao1');
+                            botao1.addEventListener('click', function() {
+                            botao1.classList.add('botao-clicado');
+                            });
+    
+                            const botao2 = document.getElementById('meuBotao2');
+                            botao2.addEventListener('click', function() {
+                            botao2.classList.add('botao-clicado');
+                            });
+    
+                            const botao3 = document.getElementById('meuBotao3');
+                            botao3.addEventListener('click', function() {
+                            botao3.classList.add('botao-clicado');
+                            });
+                        </script>
+    
+                    </div>
+                    <div class="form-container sign-in-container">
+                        <form action="#">
+                            <h1>Corretores e Imobiliárias</h1>
+                            <button>Conheça nossos planos</button>
+                            <br>
+                            <button>Quero receber uma ligação</button>
+                        </form>
+                    </div>
+                    <div class="overlay-container">
+                        <div class="overlay">
+                            <div class="overlay-panel overlay-left">
+                                <h1>Corretores ou imobiliárias ?</h1>
+                                <br>
+                                <h3 style="font-family: 'Roboto', sans-serif; font-size: 14px;">Conheça nossos planos</h3>
+                                <br>
+                                <button class="ghost" id="signIn">Corretores</button>
+                            </div>
+                            <div class="overlay-panel overlay-right">
+                                <h1>Você é o Proprietário ?</h1>
+                                <button class="ghost" id="signUp"> Proprietário </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    const signUpButton = document.getElementById('signUp');
+                    const signInButton = document.getElementById('signIn');
+                    const container = document.getElementById('container');
+            
+                    signUpButton.addEventListener('click', () => {
+                        container.classList.add("right-panel-active");
+                    });
+            
+                    signInButton.addEventListener('click', () => {
+                        container.classList.remove("right-panel-active");
+                    });
+                </script>
+            </div>
+        </div>
+        </div>
+    
+    <h1 id="lista-de-planos" style="text-align: center;">Planos</h1>
+
+    <div class="aling-planos">
+        <div class="container-planos">
+            <div class="front" id="classico">
+                <p class="classe-plano">Clássico</p>
+                <br>
+                <h1>R$: 705,90 / mês</h1>
+                <br>
+                <div class="saiba-mais-planos">
+                    Saiba mais
+                </div>
+            </div>
+    
+            <a href="/inovou/planos/plano-classico.html">
+                <div class="back" id="classico-back">
+                    <h1>R$: 705,90 / mês</h1>
+                    <h3>Portal INOVOU</h3>
+                    <ul>
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3 class="positivo">22 Ofertas</h3>
+                        </li>
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3 class="positivo">Destaques</h3>
+                        </li>
+                        <li>
+                            <img src="/_icones/icons8-cancel-50.png" alt="X" width="20px">
+                            <h3 class="negativo">Destaque Especial/Premium</h3>
+                        </li>
+        
+                        <hr>
+        
+                        <li>
+                            <img src="/_icones/icons8-cancel-50.png" alt="X" width="20px">
+                            <h3>Mais destaques do plano</h3>
+                        </li>
+                        <li>
+                            <img src="/_icones/icons8-cancel-50.png" alt="X" width="20px">
+                            <h3>Impulsionamento do ranking</h3>
+                        </li>
+                        <li>
+                            <img src="/_icones/icons8-cancel-50.png" alt="X" width="20px">
+                            <h3>Interface diferenciada</h3>
+                        </li>
+                        <li> 
+                            <img src="/_icones/icons8-cancel-50.png" alt="X" width="20px">
+                            <h3>Marca do anunciante</h3>
+                        </li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+        <div class="container-planos">
+            <div class="front" id="especial">
+                <p class="classe-plano">Epecial</p>
+                <br>
+                <h1>R$: 779,90 / mês</h1>
+                <br>
+                <div class="saiba-mais-planos">
+                    Saiba mais
+                </div>
+            </div>
+    
+            <a href="/inovou/planos/plano-especial.html">
+                <div class="back" id="especial-back">
+                    <h1>R$: 779,90 / mês</h1>
+                    <h3>Portal INOVOU</h3>
+                    <ul>
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3 class="positivo">22 Ofertas</h3>
+                        </li>
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3 class="positivo">Destaques</h3>
+                        </li>
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3 class="negativo">Destaque Especial/Premium</h3>
+                        </li>
+        
+                        <hr>
+        
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3>Mais destaques do plano</h3>
+                        </li>
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3>Impulsionamento do ranking</h3>
+                        </li>
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3>Interface diferenciada</h3>
+                        </li>
+                        <li> 
+                            <img src="/_icones/icons8-cancel-50.png" alt="X" width="20px">
+                            <h3>Marca do anunciante</h3>
+                        </li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+        <div class="container-planos">
+            <div class="front" id="premium">
+                <p class="classe-plano">Premium</p>
+                <br>
+                <h1>R$: 850,90 / mês</h1>
+                <br>
+                <div class="saiba-mais-planos">
+                    Saiba mais
+                </div>
+            </div>
+    
+            <a href="/inovou/planos/plano-especial.html">
+                <div class="back" id="premium-back">
+                    <h1>R$: 850,90 / mês</h1>
+                    <h3>Portal INOVOU</h3>
+                    <ul>
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3 class="positivo">22 Ofertas</h3>
+                        </li>
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3 class="positivo">Destaques</h3>
+                        </li>
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3 class="negativo">Destaque Especial/Premium</h3>
+                        </li>
+        
+                        <hr>
+        
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3>Mais destaques do plano</h3>
+                        </li>
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3>Impulsionamento do ranking</h3>
+                        </li>
+                        <li>
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3>Interface diferenciada</h3>
+                        </li>
+                        <li> 
+                            <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                            <h3>Marca do anunciante</h3>
+                        </li>
+                    </ul>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <br>
+    <h1 style="text-align: center;">Perguntas frenquentes sobre anúncios</h1>
+
+    <div class="perguntas-frequentes">
+        <div class="perguntas-esquerda">
+            <details>
+                <summary>Qual é a diferença entre os destaques ?</summary>
+                <ul>
+                    <li><p><b>Destaque Padrão: </b>Dentro do INOVOU ele possui uma "Tag de Destaque".</p></li>
+                    <li><p><b>Destaque Especial: </b>Esse destaque tem um Layout diferenciado e também mais relevância dentro do portal.</p></li>
+                    <li><p><b>Destaque Premium: </b>Esse destaque tem um Layout diferenciado e o logo da imobiliária, trazendo ainda mais relevância dentro dos anúncios no portal.</p></li>
+                </ul>
+            </details>
+            <details>
+                <summary>Qual a diferença entre o destaque especial/premium e o super destaque ?</summary>
+                <ul>
+                    <li><p>Os planos especial e premium possuem um impulso no ranking para todos os anúncios, incluindo destaques e anúncios comuns.</p></li>
+                    <li><p>Esses destaques não possuem posições fixas como acontece no Superdestaque.</p></li>
+                    <li><p>Além disso, o impulso no ranking não interfere nas posições fixas do superdestaque, pois a exibição desses anúncios é randômica.</p></li>
+                    <li><p>Superdestaque continua como topo fixo e os destaques ganham um peso no ranking diferenciado de acordo com a categoria.</p></li>
+                </ul>
+            </details>
+        </div>
+
+        <div class="perguntas-direita">
+            <details>
+                <summary>Como funciona o ranking de anúncios?</summary>
+                <p class="pergunta">Os planos especial e premium possuem um impulso no ranking para todos os anúncios, incluindo destaques e anúncios comuns. Esses impulsos possuem uma gradação: o plano premium possui mais impulso que o plano especial que, por sua vez, possui mais impulso que o plano clássico</p>
+            </details>
+            <details>
+                <summary>Como acompanhar o desempenho dos anúncios?</summary>
+                <p class="pergunta">Para saber a quantidade de visualizações, mensagens recebidas ou leituras de número de telefone nos seus anúncios, o ZAP+ oferece uma ferramenta exclusiva para os clientes que é o Canal Pro.</p>
+            </details>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="Anuncie">
+            <h3>Anuncie Imóveis</h3>
+            <ul>
+                <a href="#">
+                    <li> <br> Planos de Anúncio</li>
+                </a>
+                <a href="#">
+                    <li>Política de Qualidade</li>
+                </a>
+                <a href="#">
+                    <li>Venda seu imóvel</li>
+                </a>
+            </ul>
+        </div>
+        <div class="institucional">
+            <h3>Institucional</h3>
+            <a href="#"><br> Trabalhe Conosco</a>
+        </div>
+        <div class="redes">
+            <h3>Redes Sociais</h3>
+            <ul style="list-style: none;">
+                <li>
+                    <a href="https://pt-br.facebook.com" target="_blank">
+                        <img src="/casas/imagens/icons8-facebook_1.svg" alt="Facebook" width="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="/casas/imagens/icons8-instagram_1.svg" alt="Instagram" width="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://pt-br.facebook.com" target="_blank">
+                        <img src="/casas/imagens/icons8-twitter_2.svg " alt="Twitter" width="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="/casas/imagens/icons8-youtube.svg" alt="Youtube" width="35px" style="margin-top: -3px; margin-left: -4px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

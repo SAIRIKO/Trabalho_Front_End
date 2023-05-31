@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+.filtro {
+    font-family: 'Roboto', sans-serif;
+    
+    
+    height: 60px;
+    width: 750px;
+    align-items: center;
+    background-color: #f5f6f7;
+    display: flex;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #e7e7e7;
+    border-radius: 8px;
+    position: relative;   
+}
+
+.filtro__itens{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.filtro__itens__nav{
+    margin-right: 10px;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #b6b7b9;
+    border-radius: 12px;
+    color: #0bcc1b;
+    background-color: #ffffff;
+}
+.filtro__itens__nav:hover{
+    background-color: #0bcc1b71;
+    color: rgba(0, 0, 0, 0.534);
+    font-weight: bold;
+}
+

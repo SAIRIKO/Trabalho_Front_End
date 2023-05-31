@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Registro</title>
+    <link rel="stylesheet" href="/login-registro/login.css">
+</head>
+<body>
+    <h2>Crie ou entre na sua conta</h2>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="/casas/index.html">
+                <h1>Registrar</h1>
+                <span> <br> Use seu e-mail para registrar</span>
+                <input type="text" placeholder="Username" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Senha" />
+                <button>Registrar</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="/casas/index.html">
+                <h1>Entrar</h1>
+                <span> <br> Entre na sua conta</span>
+                <input type="email" placeholder="Email ou Username" />
+                <input type="password" placeholder="Senha" />
+                <a href="/casas/index.html">Esqueceu a senha ?</a>
+                <button>Login</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Bem vindo de volta!</h1>
+                    <p>Para continuar conectado <br> faça o login</p>
+                    <button class="ghost" id="signIn">Logar</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Seja bem vindo</h1>
+                    <p>Registre seus dados e crie uma nova conta</p>
+                    <button class="ghost" id="signUp">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add("right-panel-active");
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove("right-panel-active");
+        });
+    </script>
+</body>
+</html>

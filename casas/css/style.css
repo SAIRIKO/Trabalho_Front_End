@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,500&family=Noto+Serif&display=swap');
+
+.anuncio {
+	display: flex;
+	align-items: center;
+	width: 750px;
+	margin-bottom: 20px;
+	box-shadow:2px 4px 5px 3px rgba(0,0,0,.16); 
+	border-radius: 1px;
+}
+
+.anuncio-imagem {
+	
+	flex: 1;
+	margin-right: 15px;
+	
+}
+
+.anuncio-imagem img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+	margin: 6px;
+}
+
+.anuncio-descricao {
+	flex: 2;
+}
+
+
+.anuncio-descricao p {
+	margin-bottom: 5px;
+	font-family: 'Noto Serif', serif;
+	font-size: 18px;
+	
+	
+}
+.preco b{
+	font-size: 30px;
+	
+}

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,700&family=Noto+Serif&display=swap%27');
+
+.part1 p2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    font-size: 40px;
+    
+}
+
+hr{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 40px 48% 40px 48%;
+
+    height: 0.25rem;
+    border-radius: 76px;
+    border: 1px solid #1ad409;
+    background-color: #1ad409;
+
+}
+
+.imagens-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center ;
+}
+
+.imagens-slide img{
+    height: 250px;
+    border-radius: 18px;
+}
+
+.imagens-slide h5{
+    text-align: center;
+    padding: 5px 15px 10px 15px;
+    font-size: 20px;
+    font-family: 'Noto Serif', serif;
+    font-weight: 900;
+}
+
+.imagens-slide p{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Noto Serif', serif;
+    padding: 2px 0px 0px 0px;
+}
+
+
+.slide{
+    width: 374px;
+    padding: 5px 15px 5px 15px;
+}
+
+a{
+    cursor: pointer;
+}
+
+

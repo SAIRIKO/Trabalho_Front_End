@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncio</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/pesquisa.css">
+    <link rel="stylesheet" type="text/css" href="./css/botao.css">
+    <link rel="stylesheet" type="text/css" href="./css/filtro.css">
+    <link rel="stylesheet" type="text/css" href="./css/infos.css">
+    <link rel="stylesheet" type="text/css" href="./css/header-footer.css">
+    
+    
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="logo">
+                <a href="/Home/home.html">
+                        <h2> <b>I N O V O U</b> </h2>
+                        <p> <i> <b>CASAS E APARTAMENTOS</b> </i> </p>
+                </a>
+            </div>
+    
+            <div class="nav">
+                <ul>
+                    <a href="/casas/index.html">
+                        <li class="nav-list">Comprar</li>
+                    </a>
+                    <a href="/aluguel/Aluguel.html">
+                        <li class="nav-list">Alugar</li>
+                    </a>
+                    <a href="/financiamento/tela.html">
+                        <li class="nav-list">Financiamento</li>
+                    </a>
+                    <a href="/ajuda/ajuda.html">
+                        <li class="nav-list">Central de Ajuda</li>
+                    </a>
+                    <a href="/Anunciar/anunciar.html">
+                        <li class="nav-list">ANUNCIAR</li>
+                    </a>
+                    <a href="/login-registro/login.html">
+                        <div class="login">
+                            <li>entrar</li>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="aba">
+            
+            <div class="aba-titulo">O que você precisa? </div>
+            <div class="aba-conteudo">
+
+                <button class="botao-opcoes">
+                    <span class="opcao esquerda">Comprar</span>
+                    <span class="divisao"></span>
+                    <span class="opcao direita">Alugar</span>
+                </button>
+
+                <script>
+                const botao = document.querySelector('.botao-opcoes');
+                botao.addEventListener('click', function() {                        
+                this.classList.toggle('ativo');    
+                });
+                </script>
+                
+                <form>
+                    <label for="tipo-imovel"> Tipo de Imóvel:</label>
+                    <select id="tipo-imovel" name="tipo-imovel">
+                        <option value="casa"> Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="terreno">Terreno</option>
+                    </select>               
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="Digite um bairro,cidade ou estado"   >
+                </form>
+            </div>
+
+            <hr>
+
+            <div class="preco_pesquisa">
+                
+                <p>Preço:<span id="range-value-1">0</span></p>
+                <div class="range-slider">
+                    <label for="preco_min">Mín:</label>
+                    <input type="range" min="R$0" max="10000000" step="10000" value="0" class="slider" id="price-range" >
+                    <label for="preco_max">Max:</label>
+                  </div>
+
+                <div class="preco_condo">
+                    <p>Preço do condomínio:<span id="range-value-2">0</span></p>
+                    <div class="range-slider">
+                        <label for="preco_min">Mín:</label>
+                        <input type="range" min="R$0" max="100000" step="10000" value="0" class="slider" id="condo-range">
+                        <label for="preco_max">Max:</label>
+                </div>
+
+                </div>
+
+                <hr>
+            </div>
+        
+            <div class="quarto">
+                <p> Quartos: </p>
+                <div class="botoes_q">
+                    <button > 1</button>
+                    <button > 2</button>
+                    <button > 3</button>
+                    <button > 4+</button>
+                </div>
+            </div>
+
+            <div>
+                <div class="banheiros">
+                    <p> Banheiros:</p>
+                    <div class="botoes_q">
+                        <button > 1</button>
+                        <button > 2</button>
+                        <button > 3</button>
+                        <button > 4+</button>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="vagas">
+                    <p> Vagas:</p>
+                    <div class="botoes_q">
+                        <button > 1</button>
+                        <button > 2</button>
+                        <button > 3</button>
+                        <button > 4+</button>
+                    </div>
+                </div>
+            </div>
+        
+            <hr>
+        
+            <div>
+                <div class="preco_area">
+                    <p>Área:<span id="area-value">0</span></p>
+                    <div class="range-slider">
+                        <label for="area_min">Mín:</label>
+                        <input type="range" min="R$0" max="10000" step="100" value="0" class="slider" id="area-range">
+                        <label for="area_max">Max:</label>
+                      </div>
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="anuncios">
+            <div class="filtro">
+                <div class="filtro__itens"> 
+                    <span class="filtro__itens__nav"><i>Mobiliado</i></span>
+                    <span class="filtro__itens__nav"><i>Aceita Pets</i></span>
+                    <span class="filtro__itens__nav"><i>Varanda</i></span>
+                    <span class="filtro__itens__nav"><i>Piscina</i></span>
+                </div>
+            </div>
+        
+            <div class="informacao">
+                <p class="box_info">
+                    <span class="info1">mapa</span>
+                    <span class="info2">salvar busca</span>
+                    <span class="info3">Ordenar por </span>
+                    <h1>6.015.493 imóveis para Alugar..</h1>
+            </div>
+
+            <div class="anuncio">
+                <div class="anuncio-imagem">
+                    <img src="/aluguel/imagens/CASA1.jpg" alt="Imagem do Anúncio">
+                </div>
+                <div class="anuncio-descricao">
+                    <p class="preco"><b>R$ 10.000,00 / mês</b></p>
+                    <p>IPTU R$ 592,00 </p>
+                    <p>Lazer Completo, 6 suítes, 3 quartos</p>
+                    <p>Localização: Park Way - DF</p>
+                </div>
+            </div>
+        
+            <div class="anuncio">
+                <div class="anuncio-imagem">
+                    <img src="/aluguel/imagens/WhatsApp Image 2023-05-10 at 16.54.49.jpeg" alt="Imagem do Anúncio">
+                </div>
+                <div class="anuncio-descricao">
+                    <p class="preco"><b>R$ 15.000,00 / mês</b></p>
+                    <p>IPTU R$ 647,00</p>
+                    <p>Lazer Completo, 4 suítes, 2 quartos</p>
+                    <p>Localização: Lago Norte - DF</p>
+                    
+                </div>
+            </div>
+            
+            <div class="anuncio">
+                <div class="anuncio-imagem">
+                    <img src="/aluguel/imagens/WhatsApp Image 2023-05-10 at 16.54.32.jpeg" alt="Imagem do Anúncio">
+                </div>
+                <div class="anuncio-descricao">
+                    <p class="preco"><b>R$ 13.000,00 / mês </b></p>
+                    <p>IPTU R$ 943,00</p>
+                    <p>Lazer Completo, 3 Suítes, 2 quartos</p>
+                    <p>Localização: Alphaville - PB</p>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <div class="anuncio-imagem">
+                    <img src="/aluguel/imagens/CASA2.jpg" alt="Imagem do Anúncio">
+                </div>
+                <div class="anuncio-descricao">
+                    <p class="preco"><b>R$ 11.000,00 / mês </b></p>
+                    <p>IPTU R$ 992,00 </p>
+                    <p>Lazer Completo, 4 suítes, 3 quartos</p>
+                    <p>Localização: Alphaville - GO</p>
+                </div>
+            </div> 
+            
+            <div class="anuncio">
+                <div class="anuncio-imagem">
+                    <img src="/aluguel/imagens/CASA3.jpg" alt="Imagem do Anúncio">
+                </div>
+                <div class="anuncio-descricao">
+                    <p class="preco"><b>R$ 12.000,00 / mês</b></p>
+                    <p>IPTU R$ 682,00  </p>
+                    <p>Lazer Completo, 5 suítes, 2 quartos</p>
+                    <p>Localização: Setor Marista - GO</p>
+                </div>
+            </div>
+
+            <div class="anuncio">
+                <div class="anuncio-imagem">
+                    <img src="/aluguel/imagens/CASA6.jpg" alt="Imagem do Anúncio">
+                </div>
+                <div class="anuncio-descricao">
+                    <p class="preco"><b>R$ 19.500,00 / mês</b></p>
+                    <p>IPTU R$ 784,00 </p>
+                    <p>Lazer Completo, 3 suítes, 3 quartos</p>
+                    <p>Localização: Lago Sul - DF</p>
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="Anuncie">
+            <h3>Anuncie Imóveis</h3>
+            <ul>
+                <a href="#">
+                    <li> <br> Planos de Anúncio</li>
+                </a>
+                <a href="#">
+                    <li>Política de Qualidade</li>
+                </a>
+                <a href="#">
+                    <li>Venda seu imóvel</li>
+                </a>
+            </ul>
+        </div>
+        <div class="institucional">
+            <h3>Institucional</h3>
+            <a href="#"><br> Trabalhe Conosco</a>
+        </div>
+        <div class="redes">
+            <h3>Redes Sociais</h3>
+            <ul style="list-style: none;">
+                <li>
+                    <a href="">
+                        <img src="/aluguel/imagens/icons8-facebook_1.svg" alt="Facebook" width="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/aluguel/imagens/icons8-instagram_1.svg" alt="Instagram" width="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/aluguel/imagens/icons8-twitter_2.svg" alt="Twitter" width="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/aluguel/imagens/icons8-youtube.svg" alt="Youtube" width="35px" style="margin-top: -3px; margin-left: -4px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        var priceRange = document.getElementById('price-range');
+        var priceValue = document.getElementById('range-value-1');
+        priceRange.addEventListener('input', function() {
+            priceValue.textContent = priceRange.value;
+        });
+    
+        var condoRange = document.getElementById('condo-range');
+        var condoValue = document.getElementById('range-value-2');
+        condoRange.addEventListener('input', function() {
+            condoValue.textContent = condoRange.value;
+        });
+
+        var areaRange = document.getElementById('area-range');
+        var areaValue = document.getElementById('area-value');
+        areaRange.addEventListener('input', function() {
+            areaValue.textContent = areaRange.value;
+        });
+
+
+    </script>
+</body>
+</html>

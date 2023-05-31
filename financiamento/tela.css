@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteudo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 100px 0px; 
+}
+
+.formulario-financiamento{
+    background-color: #ffffff;
+    width: 40%;
+    height: 10%;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(24,39,75,.16); 
+    padding: 36px 156px;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+h4{
+    font-size: 1rem;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+    color: #5e6a82;
+    margin-bottom: 35px;
+}
+
+.p3{  
+    text-align: left;
+    padding: 0px ;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    letter-spacing: 1px;
+}
+
+.caixa-linhas{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#renda{
+    width: 95%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #cfd4dd;
+    border-radius: 12px;
+    color: #1a1d23;
+    text-align: left;
+    background-color: transparent;
+    outline-color: transparent;
+    outline-style: solid;
+    outline-width: 0;
+}
+#fgts{
+    width: 90%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #cfd4dd;
+    border-radius: 12px;
+    color: #1a1d23;
+    text-align: left;
+    background-color: transparent;
+    outline-color: transparent;
+    outline-style: solid;
+    outline-width: 0;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+button{
+    padding: 0.75rem 0.5rem;
+    border: 1.9px solid #0bcc1b;
+    border-radius: 12px;
+    width: 50%;
+    background-color:transparent;
+    color: #0bcc1b;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+button:hover{
+    box-shadow: 0 0 15px #0bcc1b;
+}
+
+

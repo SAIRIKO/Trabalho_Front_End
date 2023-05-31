@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+main{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3% 20% 3% 20%;
+    
+}
+
+.container {
+    font-size: 14px;
+    width: 300px;
+    margin-left:15% ;
+}
+
+.aba {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    width: 300px;
+    height: 720px;
+	background-color: #f5f6f7;
+    border-radius: 8px;
+    padding: 14px; 
+}
+
+.aba-titulo {
+	text-align: left;
+    margin-bottom: 9px;
+    font-size: 17px;
+}
+
+form {
+    display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+    justify-content: space-between;
+    
+}
+
+
+form label {
+	flex-basis:100%;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    letter-spacing: 1px;
+}
+
+select{
+    width: 99%;
+    height: 40px;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #b6b7b9;
+    border-radius: 12px;
+    color: #1a1d23;
+    text-align: left;
+    background-color: transparent;
+    outline-color: transparent;
+    outline-style: solid;
+    outline-width: 0;
+    background-color: white;
+}
+
+#cidade{
+    width: 86%;
+    height: 14px;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #b6b7b9;
+    border-radius: 12px;
+    color: #1a1d23;
+    text-align: left;
+    background-color: transparent;
+    outline-color: transparent;
+    outline-style: solid;
+    outline-width: 0;
+    background-color: white;
+}
+
+hr{
+    border: 0;
+    border-top: 1.5px solid #e7e7e7;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    display:block ;
+
+    unicode-bidi: isolate;
+    margin-block-start: 1.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: 3.5em;
+    margin-inline-end: 3.5em;
+}
+
+.range-slider {
+    width: 300px;
+    margin: 20px;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #4CAF50;
+    cursor: pointer;
+  }
+  
+  .slider-value {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+  }  
+
+
+
+.quarto{
+    flex-basis:100%;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    letter-spacing: 1px;
+
+}
+
+.botoes_q button{
+    font-family:'Roboto', sans-serif; 
+
+    background-color: #fff;
+    border: 1.5px solid #b6b7b9;
+    color: #0bcc1b;
+    background-color: rgba(156, 150, 150, 0);
+
+    height: 3rem;
+    width: 4rem;
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    outline-color: transparent;
+    outline-style: solid;
+    outline-width: 0;
+    transition: outline .2s ease-in-out;
+}
+
+.botoes_q button:hover{
+    background-color: #0bcc1b71;
+    color: rgba(0, 0, 0, 0.534);
+    font-weight: bold;
+}
+
+.botoes_q{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.banheiros{
+    flex-basis:100%;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    letter-spacing: 1px;
+}
+
+.vagas{
+    flex-basis:100%;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    letter-spacing: 1px;
+}
+
+.area{
+    width: 100px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #cfd4dd;
+    border-radius: 12px;
+    color: #1a1d23;
+    text-align: left;
+    background-color: transparent;
+    outline-color: transparent;
+    outline-style: solid;
+    outline-width: 0;
+    background-color: white;
+    
+}
+
+

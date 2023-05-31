@@ -1,0 +1,57 @@
+.botao-opcoes {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold; 
+    color: #1f1d1d;
+    border: 1px solid #cfd4dd;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+
+}
+
+.botao-opcoes .opcao {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+}
+
+.botao-opcoes .divisao {
+    display: inline-block;
+    width: 2px;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    background-color:  #cfd4dd;
+    transform: translateX(50%);
+}
+
+
+.botao-opcoes .opcao_esquerda:hover{
+    background-color: #1f1d1d;
+}
+
+.botao-opcoes .opcao.direita {
+    background-color: transparent;
+    left: 50%;  
+    
+}
+
+.botao-opcoes.ativo .opcao.esquerda {
+    left: 50%;
+}
+
+.botao-opcoes.ativo .opcao.direita {
+    left: 0;
+}
