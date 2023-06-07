@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 
-    <link rel="stylesheet" type="text/css" href="/Home/header-footer.css">
+
     <link rel="stylesheet" type="text/css" href="/Home/conteudo.css">
+    <link rel="stylesheet" href="/Home/header-footer.css">
     
 </head>
 <body>
@@ -15,7 +16,7 @@
         <nav>
 
             <div class="logo">
-                <a href="/Home/home.html">
+                <a href="#">
                         <h2> <b>I N O V O U</b> </h2>
                         <p> <i> <b>CASAS E APARTAMENTOS</b> </i> </p>
                 </a>
@@ -26,8 +27,11 @@
                     <a href="/casas/index.html">
                         <li class="nav-list">Comprar</li>
                     </a>
-                    <a href="/aluguel/Aluguel.html">
+                    <a href="/casas/index.html">
                         <li class="nav-list">Alugar</li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-list">Descobrir</li>
                     </a>
                     <a href="/financiamento/tela.html">
                         <li class="nav-list">Financiamento</li>
@@ -36,12 +40,10 @@
                         <li class="nav-list">Central de Ajuda</li>
                     </a>
                     <a href="/Anunciar/anunciar.html">
-                        <li class="nav-list">ANUNCIAR</li>
+                        <li class="nav-list">Anunciar</li>
                     </a>
                     <a href="/login-registro/login.html">
-                        <div class="login">
-                            <li>entrar</li>
-                        </div>
+                        <li class="nav-list">Entrar</li>
                     </a>
                 </ul>
             </div>
@@ -53,7 +55,7 @@
             </div>
             <div class="titulo">
                 <h1>
-                    No Inovou tem. O imóvel do jeito que você<br> procura tá aqui
+                    No Inovou tem. O imóvel do jeito que você procura tá aqui
                 </h1>
 
                 <h4>
@@ -64,25 +66,25 @@
                 <img  src="/Home/img/borda.svg" alt="borda">
             </div>
         </div>
-
+    
         <div class="caixa-linhas">
-                <div class="linha-formulario">
-                    <p3>Onde Deseja Morar:</p3> 
-                    <input type="deseja" id="deseja" required placeholder="Digite o nome da rua, bairro ou cidade">
-                </div>
-        
-                <div class="linha-formulario">
-                    <p3>Onde Deseja Morar:</p3>                    
-                    <select id="tipo-imovel">
-                        <option value="casa"> Casa</option>
-                            <option value="apartamento">Apartamento</option>
-                            <option value="terreno">Terreno</option>
-                    </select>  
-                </div>
+            <div class="linha-formulario">
+                <p3>Onde Deseja Morar:</p3> 
+                <input type="deseja" id="deseja" required placeholder="Digite o nome da rua, bairro ou cidade">
+            </div>
+    
+            <div class="linha-formulario">
+                <p3>Onde Deseja Morar:</p3>                    
+                <select id="tipo-imovel">
+                    <option value="casa"> Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="terreno">Terreno</option>
+                </select>  
+            </div>
         </div>
-    
+
     </header>
-    
+  
     <main>
         <div class="conteudo">
 
@@ -92,50 +94,54 @@
             </div>
             
             <div class="imagens-slide">
-                <div class="slide">
-                    <a href="/casas/index.html">
-                    <img src="https://assets-portal-cms.olx.com.br/aceita_pets_a42ca77445.webp" alt="img1" />
-                        <h5>Pronto para o seu Pet</h5>
-                        <p> Seus patudos com você. 
-                        Encontre as melhores ofertas de aluguel
-                        de imóveis para você e seu pet. 
-                        </p>
-                    </a>
+                <div class="slide1">
+                    <div class="slide">
+                        <a href="/casas/index.html">
+                        <img src="https://assets-portal-cms.olx.com.br/aceita_pets_a42ca77445.webp" alt="img1" />
+                            <h5>Pronto para o seu Pet</h5>
+                            <p> Seus patudos com você. 
+                            Encontre as melhores ofertas de aluguel
+                            de imóveis para você e seu pet. 
+                            </p>
+                        </a>
+                    </div>
+    
+                    <div class="slide">
+                        <a href="/casas/index.html">
+                        <img src="https://assets-portal-cms.olx.com.br/mais_espaco_be7b59291e.webp" alt="img2"/>
+                            <h5>Mais espaço para a família</h5>
+                            <p>
+                            Se é varanda e áreas comuns que você procura, 
+                            veja essa seleção de apartamenos e casas a venda.
+                            </p>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="slide">
-                    <a href="/casas/index.html">
-                    <img src="https://assets-portal-cms.olx.com.br/mais_espaco_be7b59291e.webp" alt="img2"/>
-                        <h5>Mais espaço para a família</h5>
-                        <p>
-                        Se é varanda e áreas comuns que você procura, 
-                        veja essa seleção de apartamenos e casas a venda.
-                        </p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="/casas/index.html">
-                    <img src="https://assets-portal-cms.olx.com.br/mobiliado_886d44f1f7.webp" alt="img3"/>
-                        <h5>Mobiliados para locação</h5>
-                        <p>
-                        Não quer gastar com móveis agora? 
-                        Veja os melhores imóveis mobiliados para alugar. 
-                        Pronto para morar.
-                        </p>
-                    </a>
-                </div>
-
-                <div class="slide">
-                    <a href="/casas/index.html">
-                        <img src="https://assets-portal-cms.olx.com.br/aceita_fiador_e34ddc0898.webp" alt="img5"/>
-                        <h5>Aluguel sem fiador</h5>
-                        <p>
-                        Alugar o imóvel dos sonhos 
-                        nunca foi tão fácil! Encontre os 
-                        melhores imóveis para alugar.
-                        </p>
-                    </a>
+                <div class="slide2">
+                    <div class="slide">
+                        <a href="/casas/index.html">
+                        <img src="https://assets-portal-cms.olx.com.br/mobiliado_886d44f1f7.webp" alt="img3"/>
+                            <h5>Mobiliados para locação</h5>
+                            <p>
+                            Não quer gastar com móveis agora? 
+                            Veja os melhores imóveis mobiliados para alugar. 
+                            Pronto para morar.
+                            </p>
+                        </a>
+                    </div>
+    
+                    <div class="slide">
+                        <a href="/casas/index.html">
+                            <img src="https://assets-portal-cms.olx.com.br/aceita_fiador_e34ddc0898.webp" alt="img5"/>
+                            <h5>Aluguel sem fiador</h5>
+                            <p>
+                            Alugar o imóvel dos sonhos 
+                            nunca foi tão fácil! Encontre os 
+                            melhores imóveis para alugar.
+                            </p>
+                        </a>
+                    </div>
                 </div>
             </div>
 

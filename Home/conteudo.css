@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,700&family=Noto+Serif&display=swap%27');
 
+main{
+    margin-top: -15%;
+}
 .part1 p2{
     display: flex;
     justify-content: center;
@@ -55,10 +58,10 @@ hr{
 .slide{
     width: 374px;
     padding: 5px 15px 5px 15px;
+    flex-grow: 1;
+      flex-basis: 0;
 }
 
 a{
     cursor: pointer;
 }
-
-

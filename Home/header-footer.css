@@ -4,22 +4,21 @@
     padding: 0;
 }
 header{
-    height: 90vh;
+    height: 920px;
 }
 
 nav{
     display: flex;
     justify-content: space-between;
     align-items: start;
-    height: 650px;
+    height: 500px;
     background-color: #f5f6f7;
     box-shadow: 2px 1px 5px 1px rgba(0, 0, 0, 0.16); 
-    border-radius: 0px 0px 150px 10px;
+    border-radius: 0px 0px 100px 10px;
 }
 
 a{
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 .logo{
@@ -32,7 +31,7 @@ a{
     color: #1ad409;
     font-size: 50px;
     text-shadow: #000;
-    text-shadow: 0.1em 0.1em 0.12em rgb(143, 142, 142);
+    text-shadow: 0.05em 0.05em 0.05em rgb(143, 142, 142);
 }
 
 .logo p i b{
@@ -51,7 +50,8 @@ a{
     font-family: 'Noto Serif', serif;
     list-style: none;
     color: #000;
-    font-size: 20px;
+    font-size: 17px;
+    margin-top: 20px;
 }
 
 .nav ul{
@@ -66,7 +66,6 @@ a{
 }
 
 .nav-list:hover{
-    height: 35px;
     width: auto;
     padding-right: 7px;
     padding-left: 7px;
@@ -74,29 +73,6 @@ a{
     color: white;
     border: 0px;
     border-radius: 10em;
-    display: flex;
-    align-items: center;
-    transition: 0.40s;
-}
-
-.login-box{
-    font-family: 'Noto Serif', serif;
-    list-style: none;
-    color: #635959;
-    font-size: 25px;
-}
-
-.login-box:hover{
-    height: auto;
-    width: auto;
-    padding-right:5px;
-    padding-left:5px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    border: 2px solid #1b1919;
-    border-radius: 15px;
-    background-color: #1ad409;
-    color: white;
     display: flex;
     align-items: center;
     transition: 0.40s;
@@ -150,12 +126,12 @@ p3{
 }
 
 .caixa-linhas{
-    position: absolute;
-    width: 1200px;
+    width: 1000px;
     display: flex;
     justify-content: space-evenly;
-    margin-left: 30%;
-    margin-top: -15%;
+    margin-left: 25%;
+    margin-top: -7%;
+    gap: 30px;
 }
 
 #deseja{
@@ -166,7 +142,7 @@ p3{
     border-radius: 12px;
     color: #1a1d23;
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Noto Serif', serif;
     background-color: transparent;
     outline-color: transparent;
@@ -183,7 +159,7 @@ select{
     color: #1a1d23;
     text-align: left;
     text-align: left;
-    font-size: 20px;
+    font-size: 17px;
     background-color: transparent;
     outline-color: transparent;
     outline-style: solid;
@@ -191,13 +167,13 @@ select{
 }
 
 footer{
-    height: 150px;
+    margin-top: 5%;
+    height: 200px;
     width: 100%;
     background-color: #35863c;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    
 }
 
 footer div ul a li{

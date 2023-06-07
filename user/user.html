@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuário</title>
+    <link rel="stylesheet" href="./style/user.css">
+    <link rel="stylesheet" href="/planos/style/header-footer.css">
+</head>
+<body>
+    <header>
+        <nav>
+
+            <div class="logo">
+                <a href="/Home/home.html">
+                        <h2> <b>I N O V O U</b> </h2>
+                        <p> <i> <b>CASAS E APARTAMENTOS</b> </i> </p>
+                </a>
+            </div>
+    
+            <div class="nav">
+                <ul>
+                    <a href="/casas/index.html">
+                        <li class="nav-list">Comprar</li>
+                    </a>
+                    <a href="/aluguel/Aluguel.html">
+                        <li class="nav-list">Alugar</li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-list">Descobrir</li>
+                    </a>
+                    <a href="/inovou/financiamento/tela.html">
+                        <li class="nav-list">Financiamento</li>
+                    </a>
+                    <a href="/ajuda/ajuda.html">
+                        <li class="nav-list">Central de Ajuda</li>
+                    </a>
+                    <a href="/inovou/Anunciar/anunciar.html">
+                        <li class="nav-list">Anunciar</li>
+                    </a>
+                    <a href="/inovou/login-registro/login.html">
+                        <div class="login">
+                            <li class="nav-list">
+                                <img src="/_icones/icons8-male-user-48.png" alt="user" width="35px">
+                            </li>
+                        </div>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="main-aling">
+        <div class="infos-user">
+            <main>
+                <div class="bloco1">
+    
+                    <label for="foto" style="width: 80px; height: 80px;">
+                        <div class="div-foto">  
+                            <input type="file" onchange="exibirImagem(this)" id="foto" style="display: none;">
+                            <br>
+                            <img id="imagemPreview" src="#" alt="Pré-visualização da imagem" class="preview" style="display: none; border-radius: 100%; margin-top: -18px;" width="120px" height="120px">
+                        </div>
+                    </label>
+    
+                    <script>
+                        function exibirImagem(input) {
+                          if (input.files && input.files[0]) {
+                            var reader = new FileReader();
+                    
+                            reader.onload = function(e) {
+                                var imagemPreview = document.getElementById('imagemPreview');
+                                imagemPreview.src = e.target.result;
+                                imagemPreview.style.display = 'block';
+                    
+                                label.style.display = 'none';
+                            }
+                    
+                            reader.readAsDataURL(input.files[0]);
+                          }
+                        }
+                      </script>
+    
+                      <h4 class="escolher">Escolha sua foto de perfil</h4>
+                </div>
+        
+                <div class="bloco2">
+                    <h3>Nome: <br> João Victor de Jesus</h3><br>
+                    <h3>Email: <br> joãozinho@gmail.com</h3><br>
+                    <h3>CPF: <br>113.298.189-82</h3><br>
+                    <h3>Telefone: <br>61 9928123-8273</h3>
+                </div>
+            </main>
+
+            <a href="/Anunciar/anunciar.html">
+                <div class="planos-user">
+                    <h3 style="text-align: center;">Seus planos</h3>
+                    <br>
+                    <hr style="width: 80%; margin-left: 10%;">
+                    <div class="preco-plano">
+                        <br> 
+                        <p class="plano-classico">&nbsp;&nbsp;&nbsp;Especial&nbsp;&nbsp;&nbsp;</p>
+                    </div>
+    
+                    <div class="plano-aling">
+                        <div class="plano">
+                            <h3>Portal INOVOU:</h3>
+                            
+                            <div class="li">
+                                <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                                <h3 class="positivo">25 Ofertas</h3>
+                            </div>
+                            <div class="li">
+                                <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                                <h3 class="positivo">Destaques</h3>
+                            </div>
+                            <div class="li">
+                                <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                                <h3 class="positivo">Destaque Especial/Premium</h3>
+                            </div>
+                            <div class="li">
+                                <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                                <h3 class="positivo">Mais destaques do plano</h3>
+                            </div>
+                            <div class="li">
+                                <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                                <h3 class="positivo">Impulsionamento do ranking</h3>
+                            </div>
+                            <div class="li">
+                                <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                                <h3 class="positivo">Interface diferenciada</h3>
+                            </div>
+                            <div class="li">
+                                <img src="/_icones/icons8-cancel-50.png" alt="X" width="23px">
+                                <h3 class="negativo">Marca do anunciante</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+ 
+            <div class="meus-anuncios">
+                <a href="#">
+                    <div class="anuncio">
+                        <div class="anuncio-imagem">
+                            <img src="/casas/imagens/apartamento4.jpg" alt="Imagem do Anúncio">
+                        </div>
+                        <div class="anuncio-descricao">
+                            <p class="preco"><b>R$ 4.150.000,00</b></p>
+                            <p>IPTU R$ 411</p>
+                            <p>Descrição do anúncio aqui</p>
+                            <p>Localização: Park Way - DF</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="#">
+                    <div class="anuncio">
+                        <div class="anuncio-imagem">
+                            <img src="/casas/imagens/Apartamento1.jpg" alt="Imagem do Anúncio">
+                        </div>
+                        <div class="anuncio-descricao">
+                            <p class="preco"><b>R$ 4.150.000,00</b></p>
+                            <p>IPTU R$ 411</p>
+                            <p>Descrição do anúncio aqui</p>
+                            <p>Localização: Park Way - DF</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="favoritos">
+            <div class="titulo-favoritos">
+                <h3>Seus favoritos</h3>
+                <img src="/_icones/icons8-heart-24.png" alt="favoritos" width="18px" height="18px"> 
+            </div>
+            <br>
+            <a href="#" target="_blank">
+                <div class="favorito">
+                    <img src="/casas/imagens/Apartamento3.jpg" alt="apt1" width="350px" height="200px">
+                </div>
+            </a>
+            <br>
+            <a href="#" target="_blank">
+                <div class="favorito">
+                    <img src="/casas/imagens/apartamento5.jpg" alt="apt2" width="350px" height="200px">
+                </div>
+            </a>
+            <br>
+            <a href="#" target="_blank">
+                <div class="favorito">
+                    <img src="/casas/imagens/apartamento 6.jpg" alt="apt3" width="350px" height="200px">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer style="margin-top: 20%;">
+        <div class="Anuncie">
+            <h3>Anuncie Imóveis</h3>
+            <ul>
+                <a href="/inovou/Anunciar/anunciar.html">
+                    <li> <br> Planos de Anúncio</li>
+                </a>
+                <a href="#">
+                    <li>Política de Qualidade</li>
+                </a>
+                <a href="/inovou/Anunciar/anunciar.html">
+                    <li>Venda seu imóvel</li>
+                </a>
+            </ul>
+        </div>
+        <div class="institucional">
+            <h3>Institucional</h3>
+            <a href="#"><br> Trabalhe Conosco</a>
+        </div>
+        <div class="redes">
+            <h3>Redes Sociais</h3>
+            <ul style="list-style: none;">
+                <li>
+                    <a href="">
+                        <img src="/aluguel/imagens/icons8-facebook_1.svg" alt="Facebook" width="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/aluguel/imagens/icons8-instagram_1.svg" alt="Instagram" width="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/aluguel/imagens/icons8-twitter_2.svg" alt="Twitter" width="30px">
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="/aluguel/imagens/icons8-youtube.svg" alt="Youtube" width="35px" style="margin-top: -3px; margin-left: -4px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

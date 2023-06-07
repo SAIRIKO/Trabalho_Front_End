@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plano Clássico</title>
-    <link rel="stylesheet" href="/inovou/planos/style/header-footer.css">
-    <link rel="stylesheet" href="/inovou/planos/style/finalizacao-planos.css">
+    <link rel="stylesheet" href="/planos/style/header-footer.css">
+    <link rel="stylesheet" href="/planos/style/finalizacao-planos.css">
 </head>
 <body>
     <header>
         <nav>
 
             <div class="logo">
-                <a href="#">
+                <a href="/Home/home.html">
                         <h2> <b>I N O V O U</b> </h2>
                         <p> <i> <b>CASAS E APARTAMENTOS</b> </i> </p>
                 </a>
@@ -21,10 +21,10 @@
     
             <div class="nav">
                 <ul>
-                    <a href="#">
+                    <a href="/casas/index.html">
                         <li class="nav-list">Comprar</li>
                     </a>
-                    <a href="#">
+                    <a href="/aluguel/Aluguel.html">
                         <li class="nav-list">Alugar</li>
                     </a>
                     <a href="#">
@@ -33,7 +33,7 @@
                     <a href="/inovou/financiamento/tela.html">
                         <li class="nav-list">Financiamento</li>
                     </a>
-                    <a href="#">
+                    <a href="/ajuda/ajuda.html">
                         <li class="nav-list">Central de Ajuda</li>
                     </a>
                     <a href="/inovou/Anunciar/anunciar.html">
@@ -41,7 +41,7 @@
                     </a>
                     <a href="/inovou/login-registro/login.html">
                         <div class="login">
-                            <li class="nav-list">entrar</li>
+                            <li class="nav-list">Entrar</li>
                         </div>
                     </a>
                 </ul>
@@ -50,7 +50,7 @@
     </header>
 
     <div class="etapas">
-        <img src="/inovou/_icones/icons8-verificado.svg" alt="Feito" width="25px">
+        <img src="/_icones/icons8-verificado.svg" alt="Feito" width="25px">
         <p>Plano</p>
         <hr width="200px">
         <p id="choice" class="numeros-plano">2</p>
@@ -61,11 +61,51 @@
         <hr width="200px">    
     </div>
 
-    <h2 class="titulo-cartao">Forma de Pagamento</h2>
+    <h2 class="titulo-cartao">Qual a forma de Pagamento desejada ?</h2>
     <main>
         <div class="pagamentos">
             <div class="pagamento">
+                <label for="checkbox1" class="checkbox1">
+                    <input type="checkbox" id="checkbox1" class="cartao-boleto" onclick="toggleCheckbox()">
+                    <h3>Cartão de Crédito</h3>
+                </label>
                 
+                <hr>
+
+                <label for="checkbox2" class="checkbox2">
+                    <input type="checkbox" id="checkbox2" class="cartao-boleto" onclick="toggleCheckbox2()">
+                    <h3>Boleto</h3>
+                </label>
+
+                <script>
+                    function toggleCheckbox() {
+                        var checkbox1 = document.getElementById("checkbox1");
+                        var checkbox2 = document.getElementById("checkbox2");
+                
+                        if (checkbox1.checked) {
+                            checkbox2.checked = false;
+                        }
+                    }
+                
+                    function toggleCheckbox2() {
+                        var checkbox1 = document.getElementById("checkbox1");
+                        var checkbox2 = document.getElementById("checkbox2");
+                
+                        if (checkbox2.checked) {
+                            checkbox1.checked = false;
+                        }
+                    }
+
+                    function removerPlaceholder(elemento) {
+                        elemento.removeAttribute('placeholder');
+                    }
+
+                        function restaurarPlaceholder(elemento) {
+                        if (!elemento.value) {
+                            elemento.setAttribute('placeholder','XXXX XXXX XXXX XXXX');
+                        }
+                    }
+                  </script>
             </div>
 
             <div class="cupom">
@@ -77,48 +117,137 @@
                 <p class="p-cupom">Esse cupom é válido apenas para a primeira compra.</p>
             </div>
 
+            <h2 class="titulo-cartao"><b>Dados do cartão de crédito</b></h2>
             <div class="dados-do-cartao">
-
-                <h2 class="titulo-cartao"><b>Dados do cartão de crédito</b></h2>
 
                 <div class="dados-do-cartao1">
                     <h3 class="numero-do-cartao">Número do cartão</h3>
-                    <br>
-                    <input type="text" id="numero-do-cartao" placeholder="XXXX XXXX XXXX XXXX">
+                    <input type="text" id="numero-do-cartao" placeholder="XXXX XXXX XXXX XXXX" onclick="removerPlaceholder(this)"  onblur="restaurarPlaceholder(this)">
                 </div>
-            
-            </div>
+                
+                <div class="dados-do-cartao2">
+                    <label for="mes-validade cartao">
+                        <h3>Mês de validade</h3>
+                        <select id="mes-validade cartao" name="mes-validade-cartao">
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                        </select>
+                    </label>
+                    
+                    <label for="ano-validade-cartao">
+                        <h3>Ano de validade</h3>
+                        <input type="number" id="ano-validade-cartao" name="ano-input" min="2022" max="2099" maxlength="4" size="4">
+                    </label>
+                    
+                    <label for="cvv">
+                        <h3>CVV</h3>
+                        <input type="number" id="cvv" min="001" max="999" maxlength="3" size="3">
+                    </label>
+                </div>
 
+                <div class="dados-do-cartao3">
+                    <h3 class="numero-do-cartao">Nome impresso no cartão</h3>
+                    <input type="text" id="numero-do-cartao">
+                </div>
+            </div>
+        
+            <h2 class="titulo-cartao"><b>Dados para faturamento</b></h2 style="margin-top:2%;">
+            <div class="faturamento">
+
+                <div class="dados-do-cartao1">
+                    <h3 class="numero-do-cartao">Nome Completo</h3>
+                    <input type="text" id="numero-do-cartao">
+                </div>
+
+                <div class="dados-do-cartao1" style="margin-top: 3%;">
+                    <h3 class="numero-do-cartao">E-mail</h3>
+                    <input type="text" id="numero-do-cartao">
+                </div>
+
+                <div class="contato-faturamento">
+                    <div class="dados-do-faturamento" style="margin-top: 3%; margin-left: 0;">
+                        <h3 class="numero-do-cartao">Telefone</h3>
+                        <input type="text" id="dados-do-faturamento">
+                    </div>
+                    <div class="dados-do-faturamento" style="margin-top: 3%; margin-right: 0;">
+                        <h3 class="numero-do-cartao">Celular (Opcional)</h3>
+                        <input type="text" id="dados-do-faturamento">
+                    </div>
+                </div>
+
+                <div class="dados-do-cartao1" style="margin-top: 3%;">
+                    <h3 class="numero-do-cartao">CPF</h3>
+                    <input type="number" id="numero-do-cartao">
+                </div>
+            </div>
             
+            <div class="termos">
+                <input type="checkbox" id="de-acordo">
+                <label for="de-acordo"><p>Li e concordo com os termos do contrato e políticas de qualidade <a href="#" style="color: #349939; text-decoration: underline;">Contrato do plano</a></p></label>    
+            </div>
+           
+            <form action="/Anunciar/finalizar/compra-finalizada.html"  id="finalizar"></form>
+
+            <div class="button">
+                <input type="submit" value="Finalizar Compra" form="finalizar">
+            </div>
         </div>
             
         <div class="planos">
             <div class="preco-plano">
                 <br> 
                 <p class="plano-classico">Clássico</p>
-                <p class="diferente">Total de 25 anúncios</p>
+                <p class="diferente">Total de 20 anúncios</p>
                 <div class="preco-plano1">
                     <p>R$:</p><h1 style="margin: 0px -50px 0px -50px;">705,90</h1><p>/mês</p>
                 </div>
             </div>
 
             <div>
+                <br>
                 <h3>Portal INOVOU</h3>
                 
                 <div class="li">
-                    <img src="/inovou/_icones/icons8-approval-30.png" alt="V" width="23px">
-                    <h3 class="positivo">22 Ofertas</h3>
+                    <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
+                    <h3 class="positivo">20 Ofertas</h3>
                 </div>
                 <div class="li">
-                    <img src="/inovou/_icones/icons8-approval-30.png" alt="V" width="23px">
+                    <img src="/_icones/icons8-approval-30.png" alt="V" width="23px">
                     <h3 class="positivo">Destaques</h3>
                 </div>
                 <div class="li">
-                    <img src="/inovou/_icones/icons8-cancel-50.png" alt="X" width="23px">
+                    <img src="/_icones/icons8-cancel-50.png" alt="X" width="23px">
                     <h3 class="negativo">Destaque Especial/Premium</h3>
                 </div>
+                <br>
                 <hr>
-
+                <br>
+                <div class="li">
+                    <img src="/_icones/icons8-cancel-50.png" alt="X" width="23px">
+                    <h3 class="negativo">Mais destaques do plano</h3>
+                </div>
+                <div class="li">
+                    <img src="/_icones/icons8-cancel-50.png" alt="X" width="23px">
+                    <h3 class="negativo">Impulsionamento do ranking</h3>
+                </div>
+                <div class="li">
+                    <img src="/_icones/icons8-cancel-50.png" alt="X" width="23px">
+                    <h3 class="negativo">Interface diferenciada</h3>
+                </div>
+                <div class="li">
+                    <img src="/_icones/icons8-cancel-50.png" alt="X" width="23px">
+                    <h3 class="negativo">Marca do anunciante</h3>
+                </div>
             </div>
         </div>
     </main>
@@ -147,22 +276,22 @@
             <ul style="list-style: none;">
                 <li>
                     <a href="">
-                        <img src="/inovou/_icones/icons8-facebook_1.svg" alt="Facebook" width="30px">
+                        <img src="/aluguel/imagens/icons8-facebook_1.svg" alt="Facebook" width="30px">
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="/inovou/_icones/icons8-instagram_1.svg" alt="Instagram" width="30px">
+                        <img src="/aluguel/imagens/icons8-instagram_1.svg" alt="Instagram" width="30px">
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="/inovou/_icones/icons8-twitter_2.svg" alt="Twitter" width="30px">
+                        <img src="/aluguel/imagens/icons8-twitter_2.svg" alt="Twitter" width="30px">
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src="/inovou/_icones/icons8-youtube.svg" alt="Youtube" width="35px" style="margin-top: -3px; margin-left: -4px;">
+                        <img src="/aluguel/imagens/icons8-youtube.svg" alt="Youtube" width="35px" style="margin-top: -3px; margin-left: -4px;">
                     </a>
                 </li>
             </ul>

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
+main{
+    margin-top: 3%;
+    gap: 20px;
+}
+
+.aba{
+    height: 750px;
+}
+
 .box_info{
     font-family: 'Roboto', sans-serif;
     align-items: center;

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,500&family=Noto+Serif&display=swap');
 
+main{
+    margin-top: 3%;
+    gap: 20px;
+}
+
 .anuncio {
 	display: flex;
 	align-items: center;

@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+    margin-bottom: 7%;
+}
+
+.foto{
+    border: 1px solid #000;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    margin-left: 0;
+}
+
+.fotoDiv input{
+    display: none;
+}
+
+.fotoDiv label img{
+    cursor: pointer;
+    margin-top: 25px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fotoDiv label{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos1{
+    width: 730px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+#descricao{
+    height: 100px;
+}
+
+#submit{
+    width: 150px;
+}
+
+.casa-apt{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #b1afaf;
+    border-radius: 100%;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.casa-apt::before {
+    content: "\2714";
+    font-size: 20px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.casa-apt:checked::before {
+    display: block;
+    border: 1px solid #168b1c;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-aling{
+    display: flex;
+}
+
+.checkbox-aling label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 3%;
+}
+
+p{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+textarea {
+    width: 737.5px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    resize: none;
+    padding-top: 1%;
+    font-family: 'Hind Siliguri', sans-serif;
+    padding-left: 1%;
+}
+
+.foto-aling{
+    margin-left: 0;
+    margin-top: 2%;
+}
+
+.foto-aling label p{
+    text-align: center;
+}
+
+.submit{
+    display: flex;
+    align-items: center;
+    width: 720px;
+    margin-top: 4%;
+}
+
+#submit{
+    background-color: #168b1c;
+    border: #168b1c solid 1px;
+    border-radius: 5px;
+    width: 250px;
+    height: 40px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+#submit:hover{
+    background-color: #b1afaf;
+    color: #073609;
+    border: 2px solid #168b1c;
+}
+
+.preview{
+    width: 340px;
+    border-radius: 0 0 15px 15px;
+    display: none;
+}
+
