@@ -5,7 +5,11 @@ main{
     gap: 20px;
 }
 
-.anuncio {
+a{
+	color: black;
+}
+
+.anuncio{
 	display: flex;
 	align-items: center;
 	width: 750px;

@@ -9,11 +9,13 @@
 	border-radius: 1px;
 }
 
+a{
+	color: black;
+}
+
 .anuncio-imagem {
-	
 	flex: 1;
-	margin-right: 15px;
-	
+	margin-right: 15px;	
 }
 
 .anuncio-imagem img {

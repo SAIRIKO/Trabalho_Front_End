@@ -3,6 +3,10 @@
 main{
     margin-top: -15%;
 }
+a{
+    color: black;
+}
+
 .part1 p2{
     display: flex;
     justify-content: center;

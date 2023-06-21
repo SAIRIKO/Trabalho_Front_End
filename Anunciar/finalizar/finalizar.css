@@ -3,6 +3,11 @@
     margin: 0 auto;
     padding: 0 auto;
 }
+
+a{
+    color: rgb(21, 184, 21);
+}
+
 main{
     display: flex;
     justify-content: space-around;
